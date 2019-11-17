@@ -51,7 +51,9 @@ def total_gross(source)
   directors_totals(source)
   list_of_directors(source)
   total = 0
-  
+  directors_totals(source).each do |key,value|
+    total += value
+  end
 end
 
 
